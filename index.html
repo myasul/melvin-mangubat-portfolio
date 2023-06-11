@@ -27,14 +27,14 @@
             <h1>Hi I'm <span>Melvin</span> <br>Mangubat from Philippines</h1>
         </article>
 
-        <!--------About------->
+        <!-- ABOUT -->
         <article id="about">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/AboutMe.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+            <section class="about-img-container">
+                <img class="about-img" src="images/AboutMe.jpg">
+            </section>
+            <section class="about-text-container">
+                <h1 class="about-header">About Me</h1>
+                <div class="about-description">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing
                         and typesetting industry. Lorem Ipsum has been
@@ -54,39 +54,56 @@
                         including versions
                         of Lorem Ipsum.
                     </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link"
-                            onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web</li>
-                            <li><span>UI/UX</span><br>Designing Web</li>
-                            <li><span>UI/UX</span><br>Designing Web</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2016</span><br>Designing Web</li>
-                            <li><span>2021</span><br>web developer</li>
-                            <li><span>2023</span><br>app developer</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>AMA Computer</span><br>Designing Web</li>
-                            <li><span>UI/UX</span><br>Designing Web</li>
-                            <li><span>UI/UX</span><br>Designing Web</li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
+                <div class="about-tab-titles">
+                    <p class="about-tab-links active-link"
+                        onclick="opentab('skills')">Skills</p>
+                    <p class="about-tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="about-tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="about-tab-contents active-tab" id="skills">
+                    <ul>
+                        <li class="about-tab-contents-item">
+                            <span>UI/UX</span><br>Designing Web
+                        </li>
+                        <li class="about-tab-contents-item">
+                            <span>UI/UX</span><br>Designing Web
+                        </li>
+                        <li class="about-tab-contents-item">
+                            <span>UI/UX</span><br>Designing Web
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-tab-contents" id="experience">
+                    <ul>
+                        <li class="about-tab-contents-item">
+                            <span>2016</span><br>Designing Web
+                        </li>
+                        <li class="about-tab-contents-item">
+                            <span>2021</span><br>web developer
+                        </li>
+                        <li class="about-tab-contents-item">
+                            <span>2023</span><br>app developer
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-tab-contents" id="education">
+                    <ul>
+                        <li class="about-tab-contents-item">
+                            <span>AMA Computer</span><br>Designing Web
+                        </li>
+                        <li class="about-tab-contents-item">
+                            <span>UI/UX</span><br>Designing Web
+                        </li>
+                        <li class="about-tab-contents-item">
+                            <span>UI/UX</span><br>Designing Web
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </article>
-        <!----------portfolio-------->
 
+        <!-- PORTFOLIO -->
         <article class="portfolio">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
@@ -132,13 +149,11 @@
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-
             </div>
             <a href class="btn">See more</a>
         </article>
 
-        <!----contact--->
-
+        <!-- CONTACT -->
         <article id="contact">
             <div class="row">
                 <div class="contact-left">
@@ -171,8 +186,8 @@
             </div>
         </article>
         <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
+            var tablinks = document.getElementsByClassName("about-tab-links");
+            var tabcontents = document.getElementsByClassName("about-tab-contents");
 
             function opentab(tabname){
                 for(tablink of tablinks){
