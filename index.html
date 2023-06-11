@@ -10,7 +10,7 @@
             crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="header">
+        <header id="header">
             <div class="container">
                 <nav>
                     <img src="images/logo_size.jpg" class="logo">
@@ -27,10 +27,10 @@
                     <h1>Hi I'm <span>Melvin</span> <br>Mangubat from Philippines</h1>
                 </div>
             </div>
-        </div>
-        <!--------About------->
+        </header>
 
-        <div id="about">
+        <!--------About------->
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
@@ -86,10 +86,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!----------portfolio-------->
 
-        <div class="portfolio">
+        <section class="portfolio">
             <div class="container">
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
@@ -139,11 +139,11 @@
                 </div>
                 <a href class="btn">See more</a>
             </div>
-        </div>
+        </section>
 
         <!----contact--->
 
-        <div id="contact">
+        <section id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
@@ -177,26 +177,22 @@
 
                 </div>
             </div>
-        </div>
-
+        </section>
         <script>
-    
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-        
-    }
-
-</script>
-
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+                
+            }
+        </script>
     </body>
 </html>
