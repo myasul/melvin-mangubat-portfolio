@@ -33,22 +33,20 @@ nav {
     width: 150px;
 }
 
-nav ul li {
-    color: #fff;
+.nav-item {
     list-style: none;
     display: inline-block;
     margin: 10px 20px;
-
 }
 
-nav ul li a {
+.nav-item-link {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after {
+.nav-item-link::after {
     content: '';
     width: 0%;
     height: 3px;
@@ -59,9 +57,8 @@ nav ul li a::after {
     transition: 0.5s;
 }
 
-nav ul li a:hover::after {
+.nav-item-link:hover::after {
     width: 100%;
-
 }
 
 .header-text {
