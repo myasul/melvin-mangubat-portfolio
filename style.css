@@ -61,6 +61,22 @@ nav {
     width: 100%;
 }
 
+.primary-btn {
+    display: block;
+    margin: 50px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #ff004f;
+    color: #fff;
+}
+
 /* INTRODUCTION */
 
 #introduction-text {
@@ -87,10 +103,11 @@ nav {
 /* ABOUT */
 
 #about {
-    padding: 80px 0px;
+    padding-bottom: 80px;
     color: #abab;
     display: flex;
     justify-content: space-around;
+    gap: 2rem;
 }
 
 .row {
@@ -173,7 +190,14 @@ nav {
 /* PORTFOLIO */
 
 #portfolio {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.portfolio-header {
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
 }
 
 .work-list {
@@ -183,20 +207,20 @@ nav {
     margin-top: 50px;
 }
 
-.work {
+.work-item {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.work img {
+.work-item img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer {
+.work-item-description {
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
@@ -213,15 +237,14 @@ nav {
     text-align: center;
     font-size: 14px;
     transition: 0.5s;
-
 }
 
-.layer h3 {
+.work-item-description h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.layer a {
+.work-item-description a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -233,29 +256,12 @@ nav {
     border-radius: 50%;
 }
 
-.work:hover img {
+.work-item:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer {
+.work-item:hover .work-item-description {
     height: 100%;
-}
-
-.btn {
-    display: block;
-    margin: 50px;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-
-}
-
-.btn:hover {
-    background: #ff004f;
-    color: #fff;
 }
 
 /* CONTACT */
